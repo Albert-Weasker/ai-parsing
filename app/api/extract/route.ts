@@ -102,7 +102,7 @@ export async function POST(request: NextRequest) {
       console.error('Field binding error:', error)
       return NextResponse.json({
         success: false,
-        error: `字段绑定失败: ${error.message}`,
+        error: 'ai服务部署过多，同时运行会导致算力不足，请稍后再试',
       }, { status: 500 })
     }
   } catch (error: any) {

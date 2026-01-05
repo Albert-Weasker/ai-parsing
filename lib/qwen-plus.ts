@@ -113,7 +113,7 @@ ${dataDescription}
       return finalResult
     } catch (error: any) {
       console.error('Qwen-Plus API Error:', error)
-      throw new Error(`字段绑定失败: ${error.message || '未知错误'}`)
+      throw new Error('ai服务部署过多，同时运行会导致算力不足，请稍后再试')
     }
   }
 

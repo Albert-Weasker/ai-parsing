@@ -2,6 +2,8 @@ import { NextRequest, NextResponse } from 'next/server'
 import { Template } from '@/types/template'
 import { getTemplates, addTemplate } from '@/lib/template-store'
 
+export const runtime = 'nodejs'
+
 export async function GET(request: NextRequest) {
   try {
     const searchParams = request.nextUrl.searchParams

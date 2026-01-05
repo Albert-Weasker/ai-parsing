@@ -3,6 +3,9 @@ import { Template } from '@/types/template'
 import { documentParser } from '@/lib/document-parser'
 import { qwenPlusService } from '@/lib/qwen-plus'
 
+export const runtime = 'nodejs'
+export const maxDuration = 60
+
 export async function POST(request: NextRequest) {
   try {
     const body = await request.json()

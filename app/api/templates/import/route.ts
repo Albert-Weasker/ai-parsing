@@ -1,6 +1,8 @@
 import { NextRequest, NextResponse } from 'next/server'
 import { Template } from '@/types/template'
 
+export const runtime = 'nodejs'
+
 // 临时存储
 let templates: Template[] = []
 
